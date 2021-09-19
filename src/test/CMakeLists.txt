@@ -1,0 +1,8 @@
+set(PROJECT_NAME ArithmeticExpressionTest)
+project(${PROJECT_NAME})
+add_subdirectory(libs)
+include_directories(libs/googletest/include)
+file(GLOB_RECURSE SOURCES ../main/*.cpp *cpp *h)
+list(FILTER SOURCES EXCLUDE REGEX "Main.cpp")
+add_executable(${PROJECT_NAME} ${SOURCES})
+target_link_libraries(${PROJECT_NAME} gtest gtest_main)
