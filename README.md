@@ -1,5 +1,4 @@
 # ArithmaticExpression
 
-![image](https://user-images.githubusercontent.com/14144934/133921011-c819b061-e1df-48f7-ac28-3c73f2031d81.png)
-
-
+Problem Statement
+![image](https://user-images.githubusercontent.com/14144934/133921048-8ae17d99-9bf9-4a00-8cf1-15a6040fd576.png)
