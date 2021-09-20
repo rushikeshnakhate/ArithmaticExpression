@@ -3,6 +3,7 @@
 #include "helper/Utils.h"
 #include "engine/ShuntingYard.h"
 #include "helper/Parser.h"
+#include "tree/BinaryTree.h"
 
 using namespace std;
 
@@ -12,6 +13,9 @@ int main() {
         std::vector<std::string> untokenize = Utils::ExpressionsIntoTokens(expressions);
         auto coreEngine = std::make_unique<ShuntingYard>();
         auto queue = coreEngine->Process(Parser::Parse(untokenize));
+        auto tree = std::make_unique<BinaryTree>();
+        tree->CreateTree(queue);
+        tree->TraverseTree();
     }
     catch (std::exception &ex) {
         std::cout << "Error in Main Error=" << ex.what();

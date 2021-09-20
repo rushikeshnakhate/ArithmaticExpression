@@ -48,6 +48,7 @@ struct TokenMaster {
     Precedence precedence;
     Associativity associativity;
 
+    TokenMaster() = default;
 
     TokenMaster(const Token &_token,
                 const TokenType &_type,
