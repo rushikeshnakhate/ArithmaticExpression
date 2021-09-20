@@ -66,7 +66,7 @@ std::deque<TokenMaster> ShuntingYard::Process(const std::deque<TokenMaster> &tok
             stack.pop_back();
         }
     } catch (std::exception &ex) {
-        std::cout << "ShuntingYard=" << ex.what() << std::endl;
+        std::cout << __func__ << ex.what();
     }
     return queue;
 }

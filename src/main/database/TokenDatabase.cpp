@@ -49,7 +49,7 @@ TokenType TokenDatabase::GetTokenType(const Token &token) {
             throw std::runtime_error(" Unsupported token" + token);
         }
     } catch (std::exception &ex) {
-        std::cout << ex.what() << std::endl;
+        std::cout << __func__ << ex.what();
     }
 };
 
@@ -72,6 +72,6 @@ TokenName TokenDatabase::GetTokenName(const Token &token) {
         }
 
     } catch (std::exception &ex) {
-        std::cout << "TokenDatabase " << ex.what() << std::endl;
+        std::cout << __func__ << ex.what();
     }
 };

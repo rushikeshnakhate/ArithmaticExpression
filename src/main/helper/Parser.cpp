@@ -21,6 +21,6 @@ std::deque<TokenMaster> Parser::Parse(const std::vector<Token> &tokens) {
         }
         return parsedToken;
     } catch (std::exception &ex) {
-        std::cout << ex.what() << std::endl;
+        std::cout << __func__ << ex.what();
     }
 }

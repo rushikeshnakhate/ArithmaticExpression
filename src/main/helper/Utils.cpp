@@ -11,7 +11,7 @@ std::vector<std::string> Utils::ExpressionsIntoTokens(std::string &expressions) 
             untokenize.push_back((*i).str());
         }
     } catch (std::exception &ex) {
-        std::cout << " ExpressionsIntoTokens error=" << ex.what() << std::endl;
+        std::cout << __func__ << ex.what();
     }
     return untokenize;
 }
